@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>American's Views on Fake News</title>
+
+    <link rel="stylesheet" href="styles/statistics.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Serif+Pro" rel="stylesheet">
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/themes/avocado.js"></script>
+
+
+  </head>
+  <body>
+
+<section>
+
+<header> American's Views on Fake News<br><p> By Rachael Tonietto</p></header>
+
+
+  <article>
+    <h1>American's Confusion due to Fake News</h1>
+
+    <p> In light of the 2016 election, many Americans have become concerned that ersatz information is taking a toll on politics. As social media grows more vital as a source for political news, so does the fear that false information is being disseminated out to the public. Research gathered by the Pew Research Center shows that Americans suspect fake news is having an inimical impact on innocent individuals seeking the facts. A new survey of 1,002 U.S. adults released by the PRC found that two-in-three adults feel fabricated news stories cause unwarranted confusion about current issues and events. Whether intentionally or accidentally, fake news has been widely shared and a concern about this dissemination is present amongst the hoi-polloi from various economic, educational, partisan and other demographic backgrounds.</p>
+
+</article>
+
+    <div id="container1" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
+    <script>Highcharts.chart('container1', {
+    chart: {
+        type: 'bar'
+    },
+    title: {
+        text: '% of U.S. Adults who Say Made-Up News has Caused _____ Confusion about The Facts'
+    },
+    subtitle: {
+        text: 'Source: <a href="http://www.journalism.org/2016/12/15/many-americans-believe-fake-news-is-sowing-confusion/#</a>'
+    },
+    xAxis: {
+        categories: ['High school or less', 'Some college', 'College+'],
+        title: {
+            text: null
+        }
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Percent of U.S. adults',
+            align: 'high'
+        },
+        labels: {
+            overflow: 'justify'
+        }
+    },
+    tooltip: {
+        valueSuffix: 'percent'
+    },
+    plotOptions: {
+        bar: {
+            dataLabels: {
+                enabled: true
+            }
+        }
+    },
+    legend: {
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'top',
+        x: 0,
+        y: 70,
+        floating: true,
+        borderWidth: 1,
+        backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+        shadow: true
+    },
+    credits: {
+        enabled: false
+    },
+    series: [{
+        name: 'A great deal',
+        data: [61, 67, 67]
+    }, {
+        name: 'Some',
+        data: [23, 24, 26]
+    }, {
+        name: 'Not much',
+        data: [8, 5, 5]
+    }, {
+        name: 'None',
+        data: [7, 3, 1]
+    }]
+});
+</script>
+
+<div class="source"><p><b>Source:</b></p><a href= "http://www.journalism.org/2016/12/15/many-americans-believe-fake-news-is-sowing-confusion/"> Pew Research Center: Many Americans Believe Fake News is Resulting in Confusion</a>
+</div>
+<article>
+  <h1>American's Confidence in Deciphering Fake News</h1>
+
+  <p>Despite the great amount of confusion 64% of Americans believe ersatz news is causing, four-in-ten American's still feel confident in their ability to decipher false information from the facts, and 49% feel somewhat confident in their faculties. Given the circumstances, it is difficult to measure the precise number of American's capable of deciphering fake stories from factual ones, for they could easily confuse the two and not recognize the mistake. However, 32% of Americans say they often come across fabricated news stories online and are able to recogonize them as such; regardless of this claims accuracy, these figures still present a sense of the public's perception in the matter.</p>
+
+</article>
+
+  <div id="container2" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+
+  <script>Highcharts.chart('container2', {
+    chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: 'pie'
+    },
+    title: {
+        text: '% of U.S. Adults who are ____ in Their Ability to Recognize Made-Up News'
+    },
+    tooltip: {
+        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: true,
+                format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                style: {
+                    color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                },
+                connectorColor: 'silver'
+            }
+        }
+    },
+    series: [{
+        name: 'Brands',
+        data: [
+            { name: 'Somewhat confident', y: 45 },
+            {
+                name: 'Very confident',
+                y: 39,
+
+            },
+            { name: 'Not very/ at all confident', y: 15 },
+            { name: 'Don not know/ refused', y: 1 },
+
+        ]
+    }]
+});
+</script>
+<div class="source"><p><b>Source:</b></p><a href= "http://www.journalism.org/2016/12/15/many-americans-believe-fake-news-is-sowing-confusion/"> Pew Research Center: Americans are Confident in Finding the Facts</a>
+</div>
+</section>
+
+</body>
